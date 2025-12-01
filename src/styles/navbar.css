@@ -1,0 +1,33 @@
+nav ul{
+    width: 100vw;
+    height: 60px;
+    top: 0;
+    /* background-color: black; */
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    z-index: 1000;
+    list-style: none;
+    padding: 2rem;
+}
+
+nav ul li:first-child{
+    margin-right: auto;
+}
+
+nav ul li:not(:first-child){
+    margin-left: 1rem;
+}
+
+nav a {
+    color:lightslategray;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: black;
+}
