@@ -32,6 +32,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/worldview" element={<Worldview />} />
             
             {/* Catch-all route for 404 - must be last */}
             <Route path="*" element={<NotFound />} />

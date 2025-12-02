@@ -30,18 +30,26 @@ function Navbar() {
           </li>
           <li>
             <Link 
-              to="/contact" 
-              className={isActive('/contact') ? 'nav-link active' : 'nav-link'}
-            >
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link 
               to="/projects" 
               className={isActive('/projects') ? 'nav-link active' : 'nav-link'}
             >
               Projects
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="/worldview" 
+              className={isActive('/worldview') ? 'nav-link active' : 'nav-link'}
+            >
+              Worldview
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="/contact" 
+              className={isActive('/contact') ? 'nav-link active' : 'nav-link'}
+            >
+              Contact
             </Link>
           </li>
         </ul>
