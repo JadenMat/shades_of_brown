@@ -1,6 +1,7 @@
 // components/Navbar.jsx
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/navbar.css';
+import logoVideo from '../assets/logo/shades_of_brown_text_animation.mp4';
 
 function Navbar() {
   const location = useLocation();
@@ -12,14 +13,6 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <ul className="nav-menu">
-          <li>
-            <Link 
-              to="/" 
-              className={isActive('/') ? 'nav-link active' : 'nav-link'}
-            >
-              Home
-            </Link>
-          </li>
           <li>
             <Link 
               to="/about" 
@@ -34,6 +27,21 @@ function Navbar() {
               className={isActive('/projects') ? 'nav-link active' : 'nav-link'}
             >
               Projects
+            </Link>
+          </li>
+          <li className="logo">
+            <Link 
+              to="/" 
+              className={isActive('/') ? 'nav-link active' : 'nav-link'}
+            >
+                  <video 
+                    src={logoVideo}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="logo-video"
+                  />
             </Link>
           </li>
           <li>

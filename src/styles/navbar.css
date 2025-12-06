@@ -1,33 +1,58 @@
+@font-face {
+    font-family: "Playwrite";
+    src: url("../assets/typefaces/PlaywriteUSModern-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "Vogue";
+    src: url("../assets/typefaces/Vogue.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "ZaiRoyal";
+    src: url("../assets/typefaces/ZaiRoyalVogueTypewriter1929-L3V1G.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 nav ul{
     width: 100vw;
     height: 60px;
     top: 0;
-    /* background-color: black; */
+    background-color: #fbf4ef;
     position: fixed;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 5rem;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
     z-index: 1000;
     list-style: none;
     padding: 2rem;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: "ZaiRoyal", sans-serif;
 }
 
-nav ul li:first-child{
+.logo {
+    margin-left: auto;
     margin-right: auto;
-}
+  }
 
-nav ul li:not(:first-child){
-    margin-left: 1rem;
-}
+  .logo-video {
+    height: 400px;
+    width: auto;
+    display: block;
+  }
 
 nav a {
-    color:lightslategray;
+    color: #654321;
     text-decoration: none;
 }
 
 nav a:hover{
-    color: black;
+    color: #341C02;
 }

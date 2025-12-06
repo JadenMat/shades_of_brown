@@ -13,3 +13,13 @@
     "main-content main-content main-content"
     "footer footer footer"  ;
 }
+
+.main-content {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
