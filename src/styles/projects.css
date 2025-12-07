@@ -1,0 +1,277 @@
+.projects_page {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    "animation animation animation"
+    "project_content project_content project_content" ;
+}
+
+.animation {
+    position: relative;
+    width: 80vw;
+    aspect-ratio: 16/9;
+    max-width: 1200px;
+    overflow: hidden;
+    /* background-color: white; */
+}
+
+.environment {
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 30%; 
+    margin:0 auto;
+    aspect-ratio: 3/4;
+    z-index: 2;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+
+.lamp {
+    position: absolute;
+    width: 57.5%;
+    bottom: 83%;
+    left: 19.5%;
+}
+
+.figure {
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 30%;
+    margin:0 auto;
+    aspect-ratio: 3/4;
+    z-index: 2;
+}
+
+.head {
+    position: absolute;
+    width: 22%;
+    top: 32%;
+    left: 25%;
+    animation: head-swing 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes head-swing {
+    0%  {transform: rotate(0deg) translateX(0%) translateY(0%);}
+    50% {transform: rotate(-12deg) translateX(-30%) translateY(-22%);}
+    100%{transform: rotate(0deg) translateX(0%) translateY(0%);}
+}
+
+.torso {
+    position: absolute;
+    width: 42%;
+    top: 41%;
+    left: 6%;
+    transform: rotate(15deg);
+    animation: torso-swing 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes torso-swing {
+    0%  {transform: rotate(15deg) translateX(0%) translateY(0%);}
+    50% {transform: rotate(2deg) translateX(-5%) translateY(-5%)}
+    100%{transform: rotate(15deg) translateX(0%) translateY(0%);}
+}
+
+.right-arm {
+    position: absolute;
+    width: 19%;
+    top: 50%;
+    left: 40%;
+    transform-origin: top left; 
+
+    height: auto;
+    aspect-ratio: 1 / 3;
+    overflow: visible;
+
+    animation: right-arm-swing 2s ease-in-out infinite;
+}
+
+@keyframes right-arm-swing {
+    0%  {transform: translateX(0%) translateY(0%) rotate(0deg);}
+    50% {transform: translateX(-6.5vw) translateY(-7.5vh) rotate(-140deg);}
+    100%{transform: translateX(0%) translateY(0%) rotate(0deg);}
+}
+
+.right_arm1 {
+    position: absolute;
+    width: 100%;
+    bottom: 72%;
+    right: 80%;
+    animation: right_arm1_swing 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+/* @keyframes right_arm1_swing {
+    0%  {transform: translateX(0%) translateY(0%) rotate(0deg);}
+    50% {transform: translateX(-20%) translateY(-80%) rotate(-100deg);}
+    100%{transform: translateX(0%) translateY(0%) rotate(0deg);}
+} */
+
+.right_arm2 {
+    width: 100%;
+    position: absolute;
+    bottom: 65%;
+    right: 27%;
+    transform: rotate(20deg);
+    transform-origin: bottom left;
+
+    animation: right_arm2_swing 2s ease-in-out infinite;
+}
+
+/* @keyframes right_arm2_swing {
+    0%  {transform: translateX(0%) translateY(0%) rotate(0deg);}
+    50% {transform: translateX(-3.5vw) translateY(-3.5vh) rotate(-125deg);}
+    100%{transform: translateX(0%) translateY(0%) rotate(0deg);}
+} */
+
+.right_hand {
+
+    position: absolute;
+    width: 60%;
+    bottom: 70%;
+    left: 70%;
+    transform: rotate(30deg);
+    transform-origin: top left;
+}
+
+/* @keyframes right_hand_swing {
+    0%  {transform:  translateX(0%) translateY(0%) rotate(0deg);}
+    50% {transform: translateX(-7vw) translateY(-18vh) rotate(-110deg);}
+    100%{transform: translateX(0%) translateY(0%) rotate(0deg);}
+} */
+
+.hammer {
+    position: absolute;
+    width: 85%;
+    bottom: 68%;
+    left: 50%;
+    transform: rotate(30deg);
+    transform-origin: center;
+    animation: hammer_swing 2s ease-in-out infinite;
+}
+
+/* @keyframes hammer_swing {
+    0%  {transform: rotate(0deg); top: 0%;}
+    50% {transform: rotate(-5deg); top: 2%;}
+    100%{transform: rotate(0deg); top: 0%;;}
+} */
+
+.left_arm1 {
+    position: absolute;
+    width: 21%;
+    top: 50%;
+    left: 22%;
+    transform: rotate(15deg);
+    animation: left_arm1_swing 2s ease-in-out infinite;
+    transform-origin: top left;
+}
+
+@keyframes left_arm1_swing {
+    0%  {transform: rotate(5deg);}
+    50% {transform: rotate(-20deg);}
+    100%{transform: rotate(5deg);}
+}
+
+.left_arm2_hand {
+    position: absolute;
+    width: 19%;
+    top: 48%;
+    left: 41%;
+    transform-origin: top left; 
+
+    height: auto;
+    aspect-ratio: 1 / 3;
+    overflow: visible;
+
+    animation: left_arm2_hand_swing 2s ease-in-out infinite;
+}
+
+@keyframes left_arm2_hand_swing {
+    0%  {transform: translateX(0vw) translateY(0vh) rotate(0deg);}
+    50% {transform: translateX(-0.5vw) translateY(-4vh) rotate(-30deg);}
+    100%{transform: translateX(0vw) translateY(0vh) rotate(0deg);}
+}
+
+.left_arm2 {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    right: 55%;
+    transform: rotate(55deg);
+    /* animation: left_arm2_swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+/* @keyframes left_arm2_swing {
+    0%  {right: 700px; top: 580px;}
+    50% {right: 675px; top: 575px;}
+    100%{right: 700px; top: 580px;}
+} */
+
+.left_hand {
+    position: absolute;
+    width: 85%;
+    top: 38%;
+    left: 12%;
+    transform: rotate(20deg);
+    animation: left_hand_swing 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes left_hand_swing {
+    0%  {transform: translateX(0vw) translateY(0vh) rotate(20deg);}
+    50% {transform: translateX(0vw) translateY(-0.5vh) rotate(15deg);}
+    100%{transform: translateX(0vw) translateY(0vh) rotate(20deg);}
+}
+
+.upper_right_leg {
+    position: absolute;
+    width: 39%;
+    top: 60.5%;
+    left: 9%;
+    animation: upper_right_swing 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes upper_right_swing {
+    0%  {transform: rotate(0deg);}
+    50% {transform: rotate(8deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.right_lower_leg {
+    position: absolute;
+    width: 35%;
+    top: 68%;
+    left: 8%;
+    transform: rotate(2deg);
+    animation: right_lower_leg_swing 2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes right_lower_leg_swing {
+    0%  {transform: rotate(0deg);}
+    50% {transform: rotate(5deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.right_foot {
+    position: absolute;
+    width: 25%;
+    top: 72%;
+    right: 85%;
+    transform: rotate(-8deg);
+    animation: right_foot_slide 2s ease-in-out infinite;
+    transform-origin: center;
+}
