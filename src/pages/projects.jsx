@@ -26,47 +26,46 @@ function Projects() {
        <div className="projects_page">
           <div className="animation">
             <div className="environment">
-              <img src={background} alt={"background"}/>
-              <img src={lamp} alt={"lamp"}/>
+              <img src={background} alt={"background"}  className="background"/>
+              <img src={lamp} alt={"lamp"} className="lamp"/>
             </div>
           
-            {/* <div className="figure">
-              <img src={head} alt={"head"}/> 
-              <img src={torso} alt={"torso"}/> 
+            <div className="figure">
+              <img src={head} alt={"head"} className="head"/> 
+              <img src={torso} alt={"torso"} className="torso"/> 
 
               <div className="right_arm">
-                <img src={right_arm1} alt={"right_arm1"}/> 
-                <img src={right_arm2} alt={"right_arm2"}/> 
-                <img src={right_hand} alt={"right_hand"}/>
-                <img src={hammer} alt={"hammer"}/>
+                <img src={right_arm1} alt={"right_arm1"} className="right_arm1"/> 
+                <img src={right_arm2} alt={"right_arm2"} className="right_arm2"/> 
+                <img src={right_hand} alt={"right_hand"} className="right_hand"/>
+                <img src={hammer} alt={"hammer"} className="hammer"/>
              </div>
 
               <div className="left_arm">
-                <img src={left_arm1} alt={"left_arm1"}/> 
+                <img src={left_arm1} alt={"left_arm1"} className="left_arm1"/> 
 
                 <div className="left_arm2_hand">
-                  <img src={left_arm2} alt={"left_arm2"}/> 
-                  <img src={left_hand} alt={"left_hand"}/>
+                  <img src={left_arm2} alt={"left_arm2"} className="left_arm2"/> 
+                  <img src={left_hand} alt={"left_hand"} className="left_hand"/>
                 </div>
               </div>
             
               <div className="right_leg">
-                <img src={right_upper_leg} alt={"right_upper_leg"}/>
-                <img src={right_lower_leg} alt={"right_lower_leg"}/>
-                <img src={right_foot} alt={"right_foot"}/>
+                <img src={right_upper_leg} alt={"right_upper_leg"} className="right_upper_leg"/>
+                <img src={right_lower_leg} alt={"right_lower_leg"} className="right_lower_leg"/>
+                <img src={right_foot} alt={"right_foot"} className="right_foot"/>
               </div>
 
               <div className="left_leg">
-                <img src={left_upper_leg} alt={"left_upper_leg"}/>
-                <img src={left_lower_leg} alt={"left_lower_leg"}/>
-                <img src={left_foot} alt={"left_foot"}/>
+                <img src={left_lower_leg} alt={"left_lower_leg"} className="left_lower_leg"/>
+                <img src={left_foot} alt={"left_foot"} className="left_foot"/>
               </div>
-            </div> */}
+            </div>
           </div>
 
           <div className="project_content">
             <h1>Projects Page</h1>
-            <p>Welcome to my website!</p>
+            <p>Welcome to my projects!</p>
           </div>
         </div>
       </div>
