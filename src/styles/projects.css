@@ -294,8 +294,8 @@
 .left_lower_leg {
     position: absolute;
     width: 35%;
-    top: 68%;
-    left: 45%;
+    top: 67%;
+    left: 5%;
     transform: rotate(5deg);
     animation: left_lower_leg_swing 2s ease-in-out infinite;
     transform-origin: center;
@@ -304,9 +304,9 @@
 .left_foot {
     position: absolute;
     width: 24%;
-    top: 72%;
-    left: 50%;
-    transform: rotate(-5deg);
+    top: 71%;
+    right: 88%;
+    transform: rotate(-16deg);
     animation: left_foot_slide 2s ease-in-out infinite;
     transform-origin: center;
 }
