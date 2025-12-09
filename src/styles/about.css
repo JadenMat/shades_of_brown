@@ -1,0 +1,185 @@
+.about_page {
+    display: grid;
+    height: auto;
+    width: 100vw;
+    grid-template-areas: 
+    "about_animation about_animation about_animation"
+    "about_content about_content about_content" ;
+}
+
+.about_content{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    grid-area: about_content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about_animation {
+    position: relative;
+    width: 100vw;
+    aspect-ratio: 16/9;
+    /* max-width: 1200px; */
+    overflow: hidden;
+    margin-top: 60px;
+
+}
+
+.about_background {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+
+.about_lamp {
+    position: absolute;
+    width: 57.5%;
+    bottom: 83%;
+    left: 19.5%;
+}
+
+.about_figure {
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 30%;
+    margin:0 auto;
+    aspect-ratio: 3/4;
+    z-index: 2;
+}
+
+.about_head {
+    position: absolute;
+    width: 20%;
+    top: 37.5%;
+    left: 29%;
+    transform: rotate(15deg);
+    /* animation: head-lean-back 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+/* @keyframes head-lean-back {
+    0%   {transform: rotate(0deg);}
+    50%  {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+} */
+
+.about_torso {
+    position: absolute;
+    width: 41%;
+    top: 45%;
+    left: 9%;
+    transform: rotate(14deg);
+    /* animation: torso-lean-back 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+/* @keyframes torso-lean-back {
+    0%   {transform: rotate(2deg); right: 635px;}
+    50%  {transform: rotate(-10deg); right: 615px;}
+    100% {transform: rotate(2deg); right: 635px;}
+} */
+
+.about_right_arm1 {
+    position: absolute;
+    width: 22%;
+    top: 52%;
+    left: 28%;
+    transform: rotate(25deg);
+    /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+.about_right_arm2 {
+    position: absolute;
+    width: 20%;
+    top: 62%;
+    left: 38%;
+    transform: rotate(55deg);
+    /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+.about_right_hand {
+    position: absolute;
+    width: 10%;
+    top: 70%;
+    left: 53%;
+    transform: rotate(80deg);
+    /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+.about_stick {
+    position: absolute;
+    width: 40%;
+    top: 64%;
+    left: 58%;
+    transform: rotate(65deg);
+    /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+.about_left_arm1 {
+    position: absolute;
+    width: 18%;
+    top: 52%;
+    left: 31%;
+    transform: rotate(10deg);
+    /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+.about_left_arm2 {
+    position: absolute;
+    width: 18%;
+    top: 54%;
+    left: 36%;
+    transform: rotate(-50deg);
+    /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+.about_left_hand {
+    position: absolute;
+    width: 12%;
+    top: 48%;
+    left: 40%;
+    transform: rotate(65deg) scaleX(-1);
+    /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+.about_right_upper_leg {
+    position: absolute;
+    width: 37%;
+    top: 56%;
+    left: 16%;
+    transform: rotate(10deg);
+    /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+.about_right_lower_leg {
+    position: absolute;
+    width: 42%;
+    top: 56%;
+    left: 23%;
+    transform: rotate(5deg);
+    /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}
+
+.about_right_foot {
+    position: absolute;
+    width: 20%;
+    top: 74%;
+    left: 35.5%;
+    /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
+    transform-origin: center;
+}

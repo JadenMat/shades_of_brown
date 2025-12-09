@@ -20,37 +20,37 @@ function About() {
     return (
       <div>
         <div className="about_page">
-          <div className="animation">
+          <div className="about_animation">
 
-            <div className="environment">
-              <img src={background} alt={"background"}  className="background"/>
-              <img src={lamp} alt={"lamp"} className="lamp"/>
+            <div className="about_environment">
+              <img src={background} alt={"background"}  className="about_background"/>
+              <img src={lamp} alt={"lamp"} className="about_lamp"/>
             </div>
 
-            <div className="figure">
-              <img src={head} alt={"head"} className="head"/> 
-                <img src={torso} alt={"torso"} className="torso"/> 
+            <div className="about_figure">
+              <img src={head} alt={"head"} className="about_head"/> 
+                <img src={torso} alt={"torso"} className="about_torso"/> 
 
-                <div className="right_arm">
-                  <img src={right_arm1} alt={"right_arm1"} className="right_arm1"/> 
-                  <img src={right_arm2} alt={"right_arm2"} className="right_arm2"/> 
-                  <img src={right_hand} alt={"right_hand"} className="right_hand"/>
-                  <img src={stick} alt={"stick"} className="stick"/>
+                <div className="about_right_arm">
+                  <img src={right_arm1} alt={"right_arm1"} className="about_right_arm1"/> 
+                  <img src={right_arm2} alt={"right_arm2"} className="about_right_arm2"/> 
+                  <img src={right_hand} alt={"right_hand"} className="about_right_hand"/>
+                  <img src={stick} alt={"stick"} className="about_stick"/>
                </div>
 
-                <div className="left_arm">
-                  <img src={left_arm1} alt={"left_arm1"} className="left_arm1"/> 
+                <div className="about_left_arm">
+                  <img src={left_arm1} alt={"left_arm1"} className="about_left_arm1"/> 
 
-                  <div className="left_arm2_hand">
-                    <img src={left_arm2} alt={"left_arm2"} className="left_arm2"/> 
-                    <img src={left_hand} alt={"left_hand"} className="left_hand"/>
+                  <div className="about_left_arm2_hand">
+                    <img src={left_arm2} alt={"left_arm2"} className="about_left_arm2"/> 
+                    <img src={left_hand} alt={"left_hand"} className="about_left_hand"/>
                  </div>
                 </div>
             
-                <div className="right_leg">
-                  <img src={right_upper_leg} alt={"right_upper_leg"} className="right_upper_leg"/>
-                  <img src={right_lower_leg} alt={"right_lower_leg"} className="right_lower_leg"/>
-                  <img src={right_foot} alt={"right_foot"} className="right_foot"/>
+                <div className="about_right_leg">
+                  <img src={right_upper_leg} alt={"right_upper_leg"} className="about_right_upper_leg"/>
+                  <img src={right_lower_leg} alt={"right_lower_leg"} className="about_right_lower_leg"/>
+                  <img src={right_foot} alt={"right_foot"} className="about_right_foot"/>
                 </div>
             </div>
           </div>

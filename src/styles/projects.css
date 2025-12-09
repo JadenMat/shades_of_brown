@@ -3,11 +3,11 @@
     height: auto;
     width: 100vw;
     grid-template-areas: 
-    "animation animation animation"
+    "project_animation project_animation project_animation"
     "project_content project_content project_content" ;
 }
 
-.animation {
+.project_animation {
     position: relative;
     width: 100vw;
     aspect-ratio: 16/9;
@@ -26,7 +26,7 @@
     align-items: flex-start;
 }
 
-.background {
+.project_background {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -35,7 +35,7 @@
     z-index: 0;
 }
 
-.lamp {
+.project_lamp {
     position: absolute;
     width: 19.5%;
     bottom: 68.5%;
@@ -43,7 +43,7 @@
     z-index: 1;
 }
 
-.figure {
+.project_figure {
     position: absolute;
     width: 40%;
     top: 20.8%;
@@ -53,7 +53,7 @@
     z-index: 2;
 }
 
-.head {
+.project_head {
     position: absolute;
     width: 22%;
     top: 32%;
@@ -68,7 +68,7 @@
     100%{transform: rotate(0deg) translateX(0%) translateY(0%);}
 } */
 
-.torso {
+.project_torso {
     position: absolute;
     width: 42%;
     top: 41%;
@@ -84,7 +84,7 @@
     100%{transform: rotate(15deg) translateX(0%) translateY(0%);}
 } */
 
-.right_arm {
+.project_right_arm {
     position: absolute;
     width: 22%;
     top: 50%;
@@ -104,7 +104,7 @@
     100%{transform: translateX(0%) translateY(0%) rotate(0deg);}
 } */
 
-.right_arm1 {
+.project_right_arm1 {
     position: absolute;
     width: 100%;
     bottom: 72%;
@@ -119,7 +119,7 @@
     100%{transform: translateX(0%) translateY(0%) rotate(0deg);}
 } */
 
-.right_arm2 {
+.project_right_arm2 {
     width: 90%;
     position: absolute;
     bottom: 70%;
@@ -136,7 +136,7 @@
     100%{transform: translateX(0%) translateY(0%) rotate(0deg);}
 } */
 
-.right_hand {
+.project_right_hand {
 
     position: absolute;
     width: 50%;
@@ -153,7 +153,7 @@
     100%{transform: translateX(0%) translateY(0%) rotate(0deg);}
 } */
 
-.hammer {
+.project_hammer {
     position: absolute;
     width: 75%;
     bottom: 78%;
@@ -170,7 +170,7 @@
     100%{transform: rotate(0deg); top: 0%;;}
 } */
 
-.left_arm1 {
+.project_left_arm1 {
     position: absolute;
     width: 21%;
     top: 45%;
@@ -186,7 +186,7 @@
     100%{transform: rotate(5deg);}
 } */
 
-.left_arm2_hand {
+.project_left_arm2_hand {
     position: absolute;
     width: 19%;
     top: 45%;
@@ -207,7 +207,7 @@
     100%{transform: translateX(0vw) translateY(0vh) rotate(0deg);}
 } */
 
-.left_arm2 {
+.project_left_arm2 {
     position: absolute;
     width: 100%;
     top: 25%;
@@ -223,7 +223,7 @@
     100%{right: 700px; top: 580px;}
 } */
 
-.left_hand {
+.project_left_hand {
     position: absolute;
     width: 85%;
     top: 41%;
@@ -239,12 +239,12 @@
     100%{transform: translateX(0vw) translateY(0vh) rotate(20deg);}
 } */
 
-.right_leg {
+.project_right_leg {
     transform-origin: center;
     z-index: 2;
 }
 
-.right_upper_leg {
+.project_right_upper_leg {
     position: absolute;
     width: 39%;
     top: 59%;
@@ -260,7 +260,7 @@
     100%{transform: rotate(0deg);}
 } */
 
-.right_lower_leg {
+.project_right_lower_leg {
     position: absolute;
     width: 35%;
     top: 68%;
@@ -276,7 +276,7 @@
     100%{transform: rotate(0deg);}
 } */
 
-.right_foot {
+.project_right_foot {
     position: absolute;
     width: 24%;
     top: 72%;
@@ -286,12 +286,12 @@
     transform-origin: center;
 }
 
-.left_leg{
+.project_left_leg{
     transform-origin: center;
     z-index: 2;
 }
 
-.left_lower_leg {
+.project_left_lower_leg {
     position: absolute;
     width: 35%;
     top: 67%;
@@ -301,7 +301,7 @@
     transform-origin: center;
 }
 
-.left_foot {
+.project_left_foot {
     position: absolute;
     width: 24%;
     top: 71%;
