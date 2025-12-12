@@ -37,9 +37,9 @@
 
 .worldview_lamp {
     position: absolute;
-    width: 57.5%;
-    bottom: 83%;
-    left: 19.5%;
+    width: 24.5%;
+    bottom: 62%;
+    left: 37.2%;
 }
 
 .worldview_figure {
@@ -54,8 +54,8 @@
 
 .worldview_head {
     position: absolute;
-    width: 20%;
-    top: 9%;
+    width: 22%;
+    /* bottom: 0%; */
     left: 25%;
     transform: rotate(-7deg);
     animation: head-lean-back 8s ease-in-out infinite;

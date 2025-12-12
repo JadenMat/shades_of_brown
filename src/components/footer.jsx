@@ -3,8 +3,10 @@ import '../styles/footer.css';
 function Footer() {
     return (
       <div>
-        <h1>Footer</h1>
-        <p>Thank you for your time!</p>
+        <footer className="footer">
+          <p>Crafted with careful consideration.</p>
+          <p>Est. 2025, Manhattan, New York</p>
+        </footer>
       </div>
     );
   }

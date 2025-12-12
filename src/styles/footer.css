@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Riccione-Serial-Extralight";
+    src: url("../assets/typefaces/Riccione-Serial-ExtraLight\ Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.p {
+    font-family: "Riccione-Serial-Extralight", sans-serif;
+    font-size: ;
+    text-align: center;
+
+}
