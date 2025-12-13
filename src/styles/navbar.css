@@ -6,6 +6,13 @@
   }
 
   @font-face {
+    font-family: "LittleKidsHandWriting";
+    src: url("../assets/typefaces/LittleKidsHandwriting-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: "Riccione-Serial-Extralight";
     src: url("../assets/typefaces/Riccione-Serial-ExtraLight\ Regular.ttf") format("truetype");
     font-weight: normal;
@@ -40,8 +47,8 @@ nav ul{
     list-style: none;
     padding: 2rem;
     overflow: hidden;
-    font-size: 0.5rem;
-    font-family: "ZaiRoyal", sans-serif;
+    font-size: 1rem;
+    font-family: "Riccione-Serial-Extralight", sans-serif;
 }
 
 .logo {
@@ -57,10 +64,15 @@ nav ul{
 
 nav a {
     color: #654321;
+    text-shadow: transparent;
     padding: 0.5em;
     text-decoration: none;
+    transition: color, 0.5s ease-in-out;
+    transition: transform, 0.4s ease-in-out;
 }
 
 nav a:hover{
-    color: #341C02;
+    color: #d6b588;
+    transfrom: scale(1.25);
+    
 }
