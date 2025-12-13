@@ -1,0 +1,41 @@
+.home_content{
+    margin-top: 60px;
+    display: grid;
+    height: auto;
+    width: 100vw;
+    grid-template-areas: 
+    "home_content_clock home_content_clock home_content_clock"
+    "home_content_projects home_content_projects home_content_projects" ;
+    background-color: #fbf4ef;
+}
+
+.home_content_clock {
+    grid-area: home_content_clock;
+    position: relative;
+    width: 100vw;
+    height: 60px;
+}
+
+.home_content_projects {
+    position: relative;
+    width: 100vw;
+    height: 1200px;
+    grid-area: home_content_projects;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.new_york_bench {
+    display: grid;
+    grid-template-columns: 240px 1fr; /* date | title */
+    gap: 2rem;
+  
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+  }
+  
+  .new_york_bench:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }

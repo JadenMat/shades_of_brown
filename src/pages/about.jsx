@@ -55,8 +55,23 @@ function About() {
             </div>
           </div>
           <div className="about_content">
-            <h1>About Page</h1>
-            <p>Welcome to my website!</p>
+
+            <div className="about_content_header1">
+              <h1>Who We Are</h1>
+            </div>
+
+            <div className="about_content_who_we_are">
+              <p>Welcome to my website!</p>
+            </div>
+
+            <div className="about_content_header2">
+              <h2>Design Philosophy</h2>
+            </div>
+
+            <div className="about_content_design_philosophy">
+              <p>Our Design Philosophy</p>
+            </div>
+
           </div>
         </div>
       </div>

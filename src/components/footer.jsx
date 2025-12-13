@@ -5,7 +5,7 @@ function Footer() {
       <div>
         <footer className="footer">
           <p>Crafted with careful consideration.</p>
-          <p>Est. 2025, Manhattan, New York</p>
+          <p>Est. 2025, New York, New York</p>
         </footer>
       </div>
     );
