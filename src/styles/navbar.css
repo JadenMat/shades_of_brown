@@ -6,6 +6,13 @@
   }
 
   @font-face {
+    font-family: "Rawrote";
+    src: url("../assets/typefaces/Rawrote\ Demo.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: "LittleKidsHandWriting";
     src: url("../assets/typefaces/LittleKidsHandwriting-Regular.otf") format("opentype");
     font-weight: normal;
