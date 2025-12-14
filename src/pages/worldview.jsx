@@ -60,8 +60,13 @@ function Worldview() {
           </div>
 
           <div className="worldview_content">
-            <h1>Worldview Page</h1>
-            <p>Welcome to my website!</p>
+            <div className="worldview_content_description">
+              <h1>Worldview</h1>
+              <p>Within <span className="logo_pop">Shades of Brown</span> we believe in sharing our sources. We treat our worldview page as an endless moodboard where poems, writings, books, designs, and much much more inspire us day by day. Check it out!</p>
+            </div>
+
+            <div className="worldview_content_moodboard">
+            </div>
           </div>
 
         </div>

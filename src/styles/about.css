@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Riccione-Serial-Extralight";
+    src: url("../assets/typefaces/Riccione-Serial-ExtraLight\ Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "HVD_Poster";
+    src: url("../assets/typefaces/HVD_Poster.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Rawrote";
+    src: url("../assets/typefaces/Rawrote\ Demo.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 .about_page {
     display: grid;
     height: auto;
@@ -5,16 +26,6 @@
     grid-template-areas: 
     "about_animation about_animation about_animation"
     "about_content about_content about_content" ;
-}
-
-.about_content{
-    position: relative;
-    width: 100vw;
-    height: auto;
-    grid-area: about_content;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .about_animation {
@@ -182,4 +193,97 @@
     left: 35.5%;
     /* animation: upper-right-arm-swing 2s ease-in-out infinite; */
     transform-origin: center;
+}
+
+.about_content{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    grid-area: about_content;
+    display: flex;
+    flex-direction: column;
+    background-color: #fbf4ef;
+    padding: 1rem 2rem;
+}
+
+.about_content_definition {
+    font-family: "Riccione-Serial-Extralight", sans-serif;
+    font-size: 0.6rem;
+    color: black;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    text-decoration-thickness: 0.8px;
+    text-underline-offset: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.educational_ , .story-driven_ , .community_oriented_ {
+    font-family: "Riccione-Serial-Extralight", sans-serif;
+    font-size: 0.6rem;
+    color: black;
+}
+
+.educational_ , .story-driven_ , .community_oriented_:hover {
+    color: #d6b588;
+    transform: scale(1.25);
+    text-decoration: none;
+}
+
+.Educational h2, .Story-Driven h2, .Community_Oriented h2 {
+    font-family: "Riccione-Serial-Extralight", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #332421;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.Educational p, .Story-Driven p, .Community_Oriented p {
+    font-family: 'Times New Roman', Times;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #332421;
+    margin-bottom: 3em;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .about_content {
+        padding: 2rem 1rem;
+    }
+
+    .about_content_header1,
+    .about_content_header2 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .about_content_header2 {
+        margin-top: 2rem;
+    }
+
+    .about_content_who_we_are,
+    .about_content_design_philosophy {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Adjust animation container for mobile */
+    .about_animation {
+        margin-top: 80px;
+    }
 }

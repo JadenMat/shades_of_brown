@@ -16,16 +16,6 @@
     margin-top: 60px;
 }
 
-.worldview_content {
-    position: relative;
-    width: 100vw;
-    height: auto;
-    grid-area: project_content;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .worldview_background {
     width: 100%;
     height: 100%;
@@ -70,11 +60,11 @@
 
 .worldview_torso {
     position: absolute;
-    width: 40%;
-    top: 18%;
-    left: 10%;
-    transform: rotate(-1deg);
-    animation: torso-lean-back 8s ease-in-out infinite;
+    width: 45%;
+    top: 0.325%;
+    left: 5%;
+    transform: rotate(5deg);
+    /* animation: torso-lean-back 8s ease-in-out infinite; */
     transform-origin: center;
 }
 
@@ -262,3 +252,23 @@
     100% {transform: translateX(0%) translateY(0%) rotate(0deg);}
     
 } */
+
+.worldview_content {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    grid-area: project_content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fbf4ef;
+}
+
+.worldview_content_description {
+    width: 60%;
+    margin: 2rem 5rem;
+    font-family: "Riccione-Serial-Extralight", sans-serif;
+    font-size: 1.2rem;
+    color: black;
+}

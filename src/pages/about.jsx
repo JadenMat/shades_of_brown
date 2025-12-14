@@ -56,22 +56,24 @@ function About() {
           </div>
           <div className="about_content">
 
-            <div className="about_content_header1">
-              <h1>Who We Are</h1>
+            <div className="about_content_definition">
+              <h1>Shades of Brown is a creative studio driven by crafting <span className="educational_">educational</span>, <span className="story-driven_">story-driven</span>, and <span className="community_oriented_">community oriented projects</span>.</h1>
             </div>
 
-            <div className="about_content_who_we_are">
-              <p>Welcome to my website!</p>
+            <div className="Educational">
+              <h2>Educational</h2>
+              <p>We believe progress is made through communal understanding and the sharing of knowledge.</p>
             </div>
 
-            <div className="about_content_header2">
-              <h2>Design Philosophy</h2>
+            <div className="Story-Driven">
+              <h2>Story-Driven</h2>
+              <p>We are dedicated to crafting stories that speak to our past, present, and future audiences.</p>
             </div>
 
-            <div className="about_content_design_philosophy">
-              <p>Our Design Philosophy</p>
+            <div className="Community_Oriented">
+              <h2>Community Oriented</h2>
+              <p>We are cutting through the noise and directly creating solutions for our communities in need.</p>
             </div>
-
           </div>
         </div>
       </div>
