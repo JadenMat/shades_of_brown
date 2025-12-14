@@ -3,8 +3,9 @@ import '../styles/contact.css';
 function Contact() {
     return (
       <div>
-        <h1>Contact Page</h1>
-        <p>Welcome to my website!</p>
+        <div className="contact_content">
+        <a href="mailto:jaden@newschool.edu" className='email'> <i>Jaden@newschool.edu</i></a>
+        </div>
       </div>
     );
   }

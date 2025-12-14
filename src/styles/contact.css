@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Riccione-Serial-Extralight";
+    src: url("../assets/typefaces/Riccione-Serial-ExtraLight\ Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.contact_content {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbf4ef;
+}
+
+.email {
+    font-family: "Riccione-Serial-Extralight", sans-serif;
+    font-size: 1.5rem;
+    color: #654321;
+    text-decoration: none;
+    transition: color, 0.5s ease-in-out;
+}
+
+.email:hover {
+    color: #a67c52;
+}
