@@ -124,29 +124,105 @@
   
     /* ===============================
          ANIMATED SVG SCRIBBLE */
-  .home_scribble1 {
-    max-width: 1000px;
-    height: auto;
-  }
+.home_scribbles {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.home_scribble1 {
+  position: absolute;
+  top: 200%;
+  left: 50%;
+
+  max-width: 200px;
+  height: auto;
+}
+
+.home_scribble2 {
+  position: absolute;
+  top: 315%;
+  right: 59%;
+
+  max-width: 200px;
+  height: auto;
+}
+
+.home_scribble3 {
+  position: absolute;
+  top: 305%;
+  left: 37%;
+
+  max-width: 200px;
+  height: auto;
+}
+
+.home_scribble4 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+
+  max-width: 200px;
+  height: auto;
+}
+       
+.home_scribble1 path {
+  stroke: #654321; /* Brown color to match your paths */
+  stroke-width: 2;
+  fill: none; /* This is crucial - removes the fill */
+
+  animation: draw-erase 8s ease-in-out infinite;
+  stroke-dasharray: 3000; /* Increased for longer paths */
+  stroke-dashoffset: 3000;
+}
+        
+.home_scribble2 path {
+  stroke: #654321; /* Brown color to match your paths */
+  stroke-width: 2;
+  fill: none; /* This is crucial - removes the fill */
+
+  animation: draw-erase 10s ease-in-out infinite;
+  stroke-dasharray: 3000; /* Increased for longer paths */
+  stroke-dashoffset: 3000;
+}
+        
+.home_scribble3 path {
+  stroke: #654321; /* Brown color to match your paths */
+  stroke-width: 2;
+  fill: none; /* This is crucial - removes the fill */
+
+  animation: draw-erase 14s ease-in-out infinite;
+  stroke-dasharray: 3000; /* Increased for longer paths */
+  stroke-dashoffset: 3000;
+}
+        
+.home_scribble4 path {
+  top: 10%;
+  left: 10%;
+
+  max-width: 200px;
+  height: auto;
+  stroke: #654321; /* Brown color to match your paths */
+  stroke-width: 2;
+  fill: none; /* This is crucial - removes the fill */
   
-  .home_scribble1 path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw-erase 4s ease-in-out infinite;
+  animation: draw-erase 10s ease-in-out infinite;
+  stroke-dasharray: 3000; /* Increased for longer paths */
+  stroke-dashoffset: 3000;
+}
+
+@keyframes draw-erase {
+  0% {
+    stroke-dashoffset: 3000;
   }
-  
-  @keyframes draw-erase {
-    0% {
-      stroke-dashoffset: 1000;
-    }
-    50% {
-      stroke-dashoffset: 0;
-    }
-    100% {
-      stroke-dashoffset: -1000;
-    }
+  50% {
+    stroke-dashoffset: 0;
   }
-  
+  100% {
+    stroke-dashoffset: -3000;
+  }
+}
+
   /* ===============================
      MOBILE COLLAPSE
   ================================ */
