@@ -12,10 +12,12 @@
     font-style: normal;
   }
 
-.footer {
+footer p {
     font-family: "Riccione-Serial-Extralight", sans-serif;
-    font-size: 1em;
+    font-size: 0.85rem;
     text-align: center;
     border-color: black;
     border-width: 1px;
+    background-color: #fbf4ef;
+    padding-bottom: 10px;
 }

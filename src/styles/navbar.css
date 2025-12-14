@@ -6,6 +6,13 @@
   }
 
   @font-face {
+    font-family: "Cheveuxddange";
+    src: url("../assets/typefaces/Cheveuxdange.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: "Rawrote";
     src: url("../assets/typefaces/Rawrote\ Demo.ttf") format("truetype");
     font-weight: normal;
@@ -80,6 +87,5 @@ nav a {
 
 nav a:hover{
     color: #d6b588;
-    transfrom: scale(1.25);
-    
+    transform: scale(1.25);
 }

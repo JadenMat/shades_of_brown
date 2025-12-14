@@ -1,41 +1,181 @@
-.home_content{
+/* ===============================
+   SHARED LAYOUT TOKENS
+================================ */
+:root {
+    --content-width: 1100px;
+    --date-col: 240px;
+  }
+  
+  @font-face {
+    font-family: "Cheveuxddange";
+    src: url("../assets/typefaces/Cheveuxdange.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Rawrote";
+    src: url("../assets/typefaces/Rawrote\ Demo.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "LittleKidsHandWriting";
+    src: url("../assets/typefaces/LittleKidsHandwriting-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Riccione-Serial-Extralight";
+    src: url("../assets/typefaces/Riccione-Serial-ExtraLight\ Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* ===============================
+     PAGE GRID (FULL BLEED BACKGROUND)
+  ================================ */
+  .home_content {
     margin-top: 60px;
-    display: grid;
-    height: auto;
     width: 100vw;
-    grid-template-areas: 
-    "home_content_clock home_content_clock home_content_clock"
-    "home_content_projects home_content_projects home_content_projects" ;
+    min-height: 100vh;              /* ⬅ fills full page height */
     background-color: #fbf4ef;
-}
-
-.home_content_clock {
-    grid-area: home_content_clock;
-    position: relative;
-    width: 100vw;
-    height: 60px;
-}
-
-.home_content_projects {
-    position: relative;
-    width: 100vw;
-    height: 1200px;
-    grid-area: home_content_projects;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.new_york_bench {
+    display: block;                 /* no grid needed here */
+  }
+  
+  /* ===============================
+     CLOCK SECTION (FULL WIDTH)
+  ================================ */
+  .home_content_clock {
+    width: 100%;                    /* ⬅ full-width background */
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  
+  /* ===============================
+     PROJECTS SECTION (FULL WIDTH)
+  ================================ */
+  .home_content_projects {
+    width: 100%;                    /* ⬅ full-width background */
+    padding-bottom: 80px;
+  }
+  
+  /* ===============================
+     SHARED INNER GRID (ALIGNMENT)
+  ================================ */
+  .content_grid {
     display: grid;
-    grid-template-columns: 240px 1fr; /* date | title */
+    grid-template-columns: var(--date-col) 1fr;
+
+    max-width: var(--content-width);    /* ⬅ text constraint */
+
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  /* ===============================
+     PROJECT ROW
+  ================================ */
+  .new_york_bench {
+    display: grid;
+    grid-template-columns: var(--date-col) 1fr;
     gap: 2rem;
-  
     padding: 1rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     text-decoration: none;
+    /* color: inherit; */
   }
   
-  .new_york_bench:hover {
-    background: rgba(255, 255, 255, 0.03);
+  /* allow full-width hover bleed */
+  
+  /* ensure anchor + grid behave together */
+  .new_york_bench.content_grid {
+    align-items: flex-start;
   }
+  
+  /* ===============================
+     TYPOGRAPHY
+  ================================ */
+  .home_content_clock p{
+    padding-left: 6rem;
+    font-family: "Rawrote", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    color: #654321;
+  }
+
+  .new_york_bench p {
+    padding-left: 6rem;
+    font-family: "Rawrote", sans-serif;
+    font-size: 1rem;
+    color: #654321;
+    transition: color, 0.5s ease-in-out;
+  }
+
+  .new_york_bench p:first-child {
+    opacity: 0.6;
+    font-size: 1rem;
+  }
+
+  .new_york_bench p:hover {
+    color: #d6b588;
+  }
+  
+    /* ===============================
+         ANIMATED SVG SCRIBBLE */
+  .home_scribble1 {
+    max-width: 1000px;
+    height: auto;
+  }
+  
+  .home_scribble1 path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw-erase 4s ease-in-out infinite;
+  }
+  
+  @keyframes draw-erase {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    50% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: -1000;
+    }
+  }
+  
+  /* ===============================
+     MOBILE COLLAPSE
+  ================================ */
+  @media (max-width: 768px) {
+  
+    :root {
+      --content-width: 100%;
+      --date-col: 1fr;
+    }
+  
+    .content_grid {
+      grid-template-columns: 1fr;
+      row-gap: 0.25rem;
+      padding: 0 1rem;              /* mobile breathing room */
+    }
+  
+    .home_content_clock {
+      padding-top: 80px;
+      padding-bottom: 24px;
+    }
+  
+    .new_york_bench {
+      padding: 0.75rem 0;
+    }
+  
+    .home_content_clock p:first-child,
+    .new_york_bench p:first-child {
+      opacity: 0.6;
+      font-size: 0.75rem;
+    }
+  }
+  
