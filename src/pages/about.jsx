@@ -56,8 +56,18 @@ function About() {
           </div>
           <div className="about_content">
 
-            <div className="about_content_definition">
+            <div className="about_content_title">
               <h1>Shades of Brown is a creative studio driven by crafting <span className="educational_">educational</span>, <span className="story-driven_">story-driven</span>, and <span className="community_oriented_">community oriented projects</span>.</h1>
+              <p>Serving the community</p>
+            </div>
+
+            <div className="about_content_rules">
+              <h2>The Rules:</h2>
+              <h3>1. Each project is driven by the story.</h3>
+              <h3>2. Half of the work is research.</h3>
+              <h3>3. We believe in the power of sharing our knowledge and educating our community.</h3>
+              <h3>4. </h3>
+              <h3>10. At the end of the day, our best ideas aren't our first. </h3>
             </div>
 
             <div className="Educational">
@@ -66,7 +76,7 @@ function About() {
             </div>
 
             <div className="Story-Driven">
-              <h2>Story-Driven</h2>
+              <h3>Story-Driven</h3>
               <p>We are dedicated to crafting stories that speak to our past, present, and future audiences.</p>
             </div>
 
